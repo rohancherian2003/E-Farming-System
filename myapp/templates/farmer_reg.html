@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+	<head>
+		<meta charset="utf-8">
+		<title>Farmer_Registration Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'farmer_reg/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'farmer_reg/css/style.css' %}">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('{% static 'farmer_reg/images/banner-01.jpg' %}');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{% static 'farmer_reg/images/banner-02.jpg' %}" style="height:70%" alt="">
+				</div>
+				<form action="" method="post">
+				{% csrf_token %}
+					<h3>Registration Form</h3>
+					
+					<div class="form-wrapper">
+    <input
+        type="text"
+        name="name"
+        placeholder="Fullname"
+        class="form-control"
+        required
+        pattern="[A-Za-z\s]+"
+        title="Name can only contain letters.">
+    <i class="zmdi zmdi-account"></i>
+</div>
+					<div class="form-wrapper">
+						<input type="email" name="email" placeholder="Email Address" class="form-control">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Password" name="pword" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<button type="submit">Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	{% if sub == 'Success' %}
+    <script>alert("Registration Success")</script>
+    {% endif %}
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Freshshop - Ecommerce Page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'index/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'index/images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'index/css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'index/css/style.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'index/css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'index/css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="/profile/"><i class="fa fa-user s_color"></i> My Account</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="login-box">
+						
+					</div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="/user/"><img src="{% static 'index/images/logo.png' %}" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="/user/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/products/">Shop</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="/orders/">Orders</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/profile/">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cart/">My Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Log out</a></li>
+                    </ul>
+                </div>
+                
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+                            <a href="#" class="photo"><img src="{% static 'index/images/img-pro-01.jpg' %}" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Delica omtantur </a></h6>
+                            <p>1x - <span class="price">$80.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="{% static 'index/images/img-pro-02.jpg' %}" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Omnes ocurreret</a></h6>
+                            <p>1x - <span class="price">$60.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="{% static 'index/images/img-pro-03.jpg' %}" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Agam facilisis</a></h6>
+                            <p>1x - <span class="price">$40.00</span></p>
+                        </li>
+                        <li class="total">
+                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <span class="float-right"><strong>Total</strong>: $180.00</span>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Checkout</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                        <li class="breadcrumb-item active">Checkout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start Cart  -->
+    <div class="cart-box-main">
+        <div class="container">                
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 mb-3">
+                <form class="needs-validation" method="post">
+                {% csrf_token %}
+                    <div class="checkout-address">
+                        <div class="title-left">
+                            <h3>Billing address</h3>
+                        </div>
+                            <div class="mb-3">
+                                <label for="username">Fullname *</label>
+                                <div class="input-group">
+                                    <input
+					type="text"
+					name="name"
+					placeholder="Full name"
+					class="form-control"
+					required
+					pattern="[A-Za-z\s]+"
+					title="Name can only contain letters.">
+                                </div>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="email">Email Address *</label>
+                                <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    class="form-control"
+    required
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    title="Please enter a valid email address (e.g., user@example.com)">
+                                <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address">Address *</label>
+                                <input
+    type="text"
+    class="form-control"
+    name="address"
+    id="address"
+    placeholder="Enter your address"
+    required
+    pattern="[A-Za-z0-9\s,.-]+"
+    title="Address can only contain letters, numbers, spaces, commas, periods, and hyphens.">
+                                <div class="invalid-feedback"> Please enter your shipping address. </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="country">Country *</label>
+                                    <select
+    class="wide w-100"
+    name="country"
+    id="country"
+    required
+    title="Please select a valid country.">
+    <option value="" disabled selected>Choose...</option>
+    <option value="United States">United States</option>
+    <option value="India">India</option>
+</select>
+                                    <div class="invalid-feedback"> Please select a valid country. </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="state">State *</label>
+                                    <select
+    class="wide w-100 form-control"
+    name="state"
+    id="state"
+    required
+    title="Please select a state.">
+    <option value="" disabled selected>Choose...</option>
+    <option value="California">California</option>
+    <option value="New York">New York</option>
+    <option value="Texas">Texas</option>
+    <option value="Florida">Florida</option>
+                                        <option value="Florida">Kerala</option>
+    <!-- Add more states as needed -->
+</select>
+                                    <div class="invalid-feedback"> Please provide a valid state. </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="zip">Zip *</label>
+                                    <input
+    type="text"
+    class="form-control"
+    name="zip"
+    id="zip"
+    placeholder="Enter ZIP code"
+    required
+    pattern="\d{6}(-\d{4})?"
+    title="Please enter a valid ZIP code (e.g., 123456 ).">
+                                    <div class="invalid-feedback"> Zip code required.</div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-name">Name on card</label>
+                                    <input
+    type="text"
+    class="form-control"
+    id="cc-name"
+    name="cname"
+    placeholder="Full name as displayed on card"
+    required
+    pattern="[A-Za-z\s]+"
+    title="Please enter a valid name (letters and spaces only).">
+<small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback"> Name on card is required </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cc-number">Credit card number</label>
+                                   <input
+    type="text"
+    class="form-control"
+    id="cc-number"
+    name="cno"
+    placeholder="Enter your credit card number"
+    required
+    pattern="\d{12}"
+    maxlength="19"
+    title="Please enter a valid credit card number (12 digits).">
+                                    <div class="invalid-feedback"> Credit card number is required </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">Expiration</label>
+                                    <input
+    type="text"
+    class="form-control"
+    name="exp"
+    id="cc-expiration"
+    placeholder="MM/YY"
+    required
+    pattern="(0[1-9]|1[0-2])\/\d{2}"
+    title="Please enter a valid expiration date in MM/YY format (e.g., 01/25).">
+                                    <div class="invalid-feedback"> Expiration date required </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cc-expiration">CVV</label>
+                                    <input
+    type="text"
+    class="form-control"
+    name="cvv"
+    id="cc-cvv"
+    placeholder="Enter CVV"
+    required
+    pattern="\d{3}"
+    maxlength="3"
+    title="Please enter a valid CVV (3 digits).">
+                                    <div class="invalid-feedback"> Security code required </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="payment-icon">
+                                        <ul>
+                                            <li><img class="img-fluid" src="{% static 'index/images/payment-icon/1.png' %}" alt=""></li>
+                                            <li><img class="img-fluid" src="{% static 'index/images/payment-icon/2.png' %}" alt=""></li>
+                                            <li><img class="img-fluid" src="{% static 'index/images/payment-icon/3.png' %}" alt=""></li>
+                                            <li><img class="img-fluid" src="{% static 'index/images/payment-icon/5.png' %}" alt=""></li>
+                                            <li><img class="img-fluid" src="{% static 'index/images/payment-icon/7.png' %}" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-1">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 mb-3">
+                    <div class="row">
+                        
+                        <div class="col-md-12 col-lg-12">
+                            <div class="odr-box">
+                                <div class="title-left">
+                                    <h3>Shopping cart</h3>
+                                </div>
+                                <div class="rounded p-2 bg-light">
+                                    {% for i in prd %}
+                                    <div class="media mb-2 border-bottom">
+                                        <div class="media-body"> <a href="detail.html"> {{i.products.pname}} </a>
+                                            <div class="small text-muted">Price:₹ {{i.products.price}} <span class="mx-2">|</span> Qty: {{i.quantity}} <span class="mx-2">|</span> Subtotal:₹ {{i.total}} </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="order-box">
+                                <div class="title-left">
+                                    <h3>Your order</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="font-weight-bold">Product</div>
+                                    <div class="ml-auto font-weight-bold">Total</div>
+                                </div>
+                                <hr class="my-1">
+                                <div class="d-flex">
+                                    <h4>Sub Total</h4>
+                                    <div class="ml-auto font-weight-bold"> ₹ {{sub_total}} </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h4>Discount</h4>
+                                    <div class="ml-auto font-weight-bold"> ₹ 0 </div>
+                                </div>
+                                <hr class="my-1">
+                                <div class="d-flex">
+                                    <h4>Coupon Discount</h4>
+                                    <div class="ml-auto font-weight-bold"> ₹ 0 </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h4>Tax</h4>
+                                    <div class="ml-auto font-weight-bold"> ₹ 0 </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h4>Shipping Cost</h4>
+                                    <div class="ml-auto font-weight-bold"> Free </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex gr-total">
+                                    <h5>Grand Total</h5>
+                                    <div class="ml-auto h5"> ₹ {{sub_total}} </div>
+                                </div>
+                                <hr> </div>
+                        </div>
+                        <div class="col-12 d-flex shopping-box"> <button type="submit" class="ml-auto btn hvr-hover">Place Order</button> </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Cart -->
+
+    <!-- Start Instagram Feed  -->
+    
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2025 </p>  <p>Design By:admin@gmail.com</p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'index/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'index/js/popper.min.js' %}"></script>
+    <script src="{% static 'index/js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'index/js/jquery.superslides.min.js' %}"></script>
+    <script src="{% static 'index/js/bootstrap-select.js' %}"></script>
+    <script src="{% static 'index/js/inewsticker.js' %}"></script>
+    <script src="{% static 'index/js/bootsnav.js' %}"></script>
+    <script src="{% static 'index/js/images-loded.min.js' %}"></script>
+    <script src="{% static 'index/js/isotope.min.js' %}"></script>
+    <script src="{% static 'index/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'index/js/baguetteBox.min.js' %}"></script>
+    <script src="{% static 'index/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'index/js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'index/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'index/js/contact-form-script.js' %}"></script>
+    <script src="{% static 'index/js/custom.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4jg9zPWLtfdbsUa3k4upBXqJKAmvd-3xrw&s');
+      background-repeat:no-repeat;
+      background-size: cover;
+    }
+    .profile-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    .profile-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      margin-bottom: 10px;
+    }
+    .profile-header h2 {
+      font-size: 22px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUe4n2LCkspyQpBHYHpyxBzRYRIoZiHeoj4g&s" alt="Profile Picture">
+      <h2>Edit Profile</h2>
+    </div>
+    <form method="POST">
+    {% csrf_token %}
+    {% for i in reg %}
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+    type="text"
+    id="name"
+    name="name"
+    value="{{i.name}}"
+    placeholder="Enter your name"
+    required
+    pattern="^[A-Za-z\s'-]+$"
+    title="Name can only contain letters.">
+        <span style="color:red">{{msg}}</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="{{i.email}}" placeholder="Enter your email" readonly>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pword" placeholder="Enter a new password" required>
+      </div>
+      <button type="submit" class="btn">Save Changes</button>
+    </form>
+    {% endfor %}
+  </div>
+{% if sub == 'Success' %}
+  <script>alert("Profile Updated")</script>
+{% endif %}
+</body>
+</html>
