@@ -1,6 +1,6 @@
 # E-Farming System
 
-This is a comprehensive E-commerce and agricultural management web application built with **Django** and html,CSS,Javasript,**Firebase Firestore**. The platform connects farmers directly with buyers, allowing farmers to list their agricultural products and buyers to purchase them securely.
+This is a comprehensive E-commerce and agricultural management web application built with **Django, and HTML,CSS,Javasript,** **Firebase Firestore**. The platform connects farmers directly with buyers, allowing farmers to list their agricultural products and buyers to purchase them securely.
 
 ## Features
 - **3 User Roles**: Admin, Farmer (Seller), and User (Buyer).
