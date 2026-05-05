@@ -64,15 +64,3 @@ python manage.py runserver
 Open your browser and navigate to:
 **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**
 
----
-
-## 🛠️ Testing the Platform
-To fully test the platform, you'll need to create an Admin user in your Firestore database so you can approve farmers. 
-
-1. Create a document in the `Registration` collection in your Firebase Firestore console.
-2. Add the following string fields:
-   - `email`: `admin@gmail.com`
-   - `password`: `admin`
-   - `name`: `Admin`
-   - `rights`: `Admin`
-3. Go to the application's login page and log in with these credentials to access the admin dashboard!
